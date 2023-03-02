@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../static/sass/define.scss";
 
 .dashboard {
@@ -41,6 +41,7 @@ export default {
 .content {
   background-color: white;
   border-radius: 10px 0 0 10px;
+  padding: 10px 20px;
 }
 
 .container {
