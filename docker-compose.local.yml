@@ -1,0 +1,9 @@
+version: "3"
+services:
+  phuc-portfilo:
+    network_mode: "host"
+    # env_file:
+    #   - .env.local
+    volumes:
+      - ./:/app
+    command: bash -c "yarn && yarn dev"

@@ -1,0 +1,11 @@
+version: '3'
+services:
+    wine-app:
+        network_mode: "host"
+        build: ./
+        container_name: wine-app
+        env_file:
+            - .env.local
+        volumes:
+            - ./:/app
+        command: bash -c "yarn && yarn dev"
