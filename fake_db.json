@@ -1,0 +1,39 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "member_id": "PRD001",
+      "first_name": "Nim",
+      "last_name": "Tri Phuc",
+      "bank_number": "83958390",
+      "bank_name": "Techcombank",
+      "gender": 1
+    },
+    {
+      "id": 2,
+      "member_id": "PRD002",
+      "first_name": "Nim",
+      "last_name": "Tri Huy",
+      "bank_number": "09830968093",
+      "bank_name": "Techcombank",
+      "gender": 2
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "date": "03-03-2023",
+      "payer_id": 1,
+      "description": "Tri Phuc"
+    },
+    {
+      "id": 2,
+      "employee_code": "PRD002",
+      "first_name": "Nim",
+      "last_name": "Tri Phuc",
+      "bank_number": "09830968093",
+      "bank_name": "Techcombank",
+      "gender": 2
+    }
+  ]
+}
