@@ -11,9 +11,9 @@
                     Members
                 </div>
             </router-link>
-            <router-link to="/payments" active-class="active" class="side-btn">
+            <router-link to="/events" active-class="active" class="side-btn">
                 <div class="link-container">
-                    Payments
+                    Events
                 </div>
             </router-link>
             <router-link to="/statistics" active-class="active" class="side-btn">

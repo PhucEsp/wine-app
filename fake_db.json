@@ -19,21 +19,50 @@
       "gender": 2
     }
   ],
-  "payments": [
+  "events": [
     {
       "id": 1,
+      "event_name": "Sinh nhat AAA",
       "date": "03-03-2023",
-      "payer_id": 1,
-      "description": "Tri Phuc"
+      "description": "desciption",
+      "payer_name": "Tri Phuc",
+      "payer_id": 3,
+      "attendees": [
+        {
+          "id": 1,
+          "member_id": "PRD002",
+          "first_name": "Nim",
+          "last_name": "Tri Huy"
+        },
+        {
+          "id": 2,
+          "member_id": "PRD002",
+          "first_name": "Nim",
+          "last_name": "Tri Huy"
+        }
+      ]
     },
     {
       "id": 2,
-      "employee_code": "PRD002",
-      "first_name": "Nim",
-      "last_name": "Tri Phuc",
-      "bank_number": "09830968093",
-      "bank_name": "Techcombank",
-      "gender": 2
+      "event_name": "Sinh nhat BBB",
+      "date": "03-03-2023",
+      "description": "desciption",
+      "payer_name": "Tri Phuc",
+      "payer_id": 3,
+      "attendees": [
+        {
+          "id": 1,
+          "member_id": "PRD002",
+          "first_name": "Nim",
+          "last_name": "Tri Huy"
+        },
+        {
+          "id": 2,
+          "member_id": "PRD002",
+          "first_name": "Nim",
+          "last_name": "Tri Huy"
+        }
+      ]
     }
   ]
 }
