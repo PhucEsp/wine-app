@@ -1,5 +1,7 @@
 <template>
-  <div>Header</div>
+  <HeaderContent :header_text="this.header_text">
+    <CreateMemberDialogVue></CreateMemberDialogVue>
+  </HeaderContent>
   <div>
     <v-table height="300px">
       <thead>
@@ -24,10 +26,14 @@
 
 <script>
 import MemberService from "../api/member.service";
+import HeaderContent from "../components/common/HeaderContent.vue";
+import CreateMemberDialogVue from '../components/dialog/CreateMemberDialog.vue';
 export default {
+  components: { HeaderContent, CreateMemberDialogVue },
   data() {
     return {
       members: [],
+      header_text: "Members"
     };
   },
   created() {

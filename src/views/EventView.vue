@@ -1,13 +1,25 @@
+<template>
+    <HeaderContent :header_text="this.header_text">
+        <CreateMemberDialogVue></CreateMemberDialogVue>
+    </HeaderContent>
+    <EventDetails v-for="event in events" :key="event.id" v-bind:event="event"></EventDetails>
+</template>
+
 <script>
 import EventDetails from '../components/events/EventDetails.vue'
 import EventService from '../api/event.service'
+import HeaderContent from '../components/common/HeaderContent.vue'
+import CreateMemberDialogVue from '../components/dialog/CreateMemberDialog.vue'
 export default {
     components: {
-        EventDetails
+        EventDetails,
+        HeaderContent,
+        CreateMemberDialogVue
     },
     data() {
         return {
-            events: []
+            events: [],
+            header_text: 'Events'
         }
     },
     created() {
@@ -22,11 +34,6 @@ export default {
     },
 }
 </script>
-
-<template>
-    <h2>Event</h2>
-    <EventDetails v-for="event in events" :key="event.id" v-bind:event="event"></EventDetails>
-</template>
 
 <style lang="">
     
